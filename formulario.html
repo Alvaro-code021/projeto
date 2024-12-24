@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Cherry</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <form action="resposta.html" method="post">
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome" required />
+        <br />
+        <label for="iemail">Email</label>
+        <input type="email" name="email" id="iemail" required />
+        <br />
+        <label for="inumero">Numero</label>
+        <input type="number" name="numero" id="inumero" required />
+        <br />
+    
+          
+          <input type="checkbox" name="design" id="idesign" />
+          <label for="idesign">Design</label>
+          <br />
+          <input type="checkbox" name="site" id="isite" />
+          <label for="isite">Site</label>
+          <br />
+    
+          <input type="checkbox" name="requerido" id="irequerido" required />
+          <label for="irequerido">Eu selecionei pelo menos uma das opções acima</label>
+
+        
+        <br />
+        <textarea
+          name="info"
+          id="iinfo"
+          cols="70"
+          rows="5"
+          placeholder="Informe a ideia principal do seu projeto e retornaremos o mais breve possível."
+          required
+        ></textarea>
+        <br />
+        <input type="reset" value="Limpar" /><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </main>
+  </body>
+</html>

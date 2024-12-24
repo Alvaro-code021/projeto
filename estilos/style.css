@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+:root {
+  --cor1: #d8a1e093;
+  --cor2: #58abff69;
+  --cor3: #003366;
+  --cor4: #d8a1e0;
+  --cor5: #c253d3;
+  --cor6: #783e7f;
+}
+
+body {
+  background-color: var(--cor1);
+}
+
+main {
+  background-color: white;
+  max-width: 80vw;
+  min-width: 450px;
+  margin: auto;
+  text-align: justify;
+}
+
+main a{
+    text-decoration: none;
+    color: rgb(4, 0, 73);
+    font-variant: small-caps;
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
+main a::before{
+    content: "\1F517  ";
+}
+
+div.imagem {
+  max-width: 80vw;
+  min-width: 450px;
+  height: 40vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.725);
+}
+
+header {
+  background-image: -moz-linear-gradient(to bottom, var(--cor4), var(--cor5));
+  text-align: center;
+}
+
+header > h1, header > h2{
+  font-size: 2em;
+  font-variant: small-caps;
+  color: white;
+  padding: 10px;
+}
+
+header h2{
+    font-size: 1.4em;
+    margin-top: -20px;
+    margin-bottom: 2px;
+}
+
+header ul {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+header li {
+  display: inline-block;
+
+  font-variant: small-caps;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+}
+
+header a:hover {
+  background-color: var(--cor6);
+
+  border-radius: 10px;
+  border: solid 1px white;
+  transition: background-color 0.5s, border 0.3s;
+}
+
+
+mark {
+  background-color: var(--cor2);
+}
+
+section {
+  padding: 10px;
+}
+
+section p {
+  padding: 5px;
+  line-height: 1.5em;
+  text-indent: 10px;
+}
+
+section ul {
+  list-style-position: inside;
+}
+
+section#intro {
+  text-align: center;
+}
+
+section#intro h2 {
+  font-size: 1.5em;
+  font-variant: small-caps;
+}
+
+section#intro p {
+  font-size: 1.2em;
+}
+
+footer {
+  color: white;
+  background-image: -moz-linear-gradient(to bottom, var(--cor4), var(--cor5));
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  margin: 10px;
+  padding: 0px 10px;
+}
